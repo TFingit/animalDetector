@@ -32,16 +32,13 @@ public class DetectAnimal {
         HashMap<String, String> options = new HashMap<>();
         options.put("top_num", "1");
         byte[] data = inputStream2Byte(imgStream);
+        //拿到结果
         JSONObject result = client.animalDetect(data, options);
-        System.out.println(result+"--原始数据");
+        //将结果中的result数组获取出来，随后使用fastjson进行解析，并获取第一个
         String json = result.get("result").toString();
         String target = JSONArray.parseArray(json).get(0).toString();
         Map<String,String> end = com.alibaba.fastjson.JSONObject.toJavaObject(com.alibaba.fastjson.JSONObject.parseObject(target), Map.class);
-        //System.out.println(end.get("name"));
-       // Map<String,String> parse = (Map<String, String>) com.alibaba.fastjson.JSONObject.parse(result.get("result").toString());
-        //System.out.println(parse.get("name"));
-      //  String name = result.get("result").get("name");
-	//	String score = result.get("result").get("score");
+        
     	return end;
     }
     /**
