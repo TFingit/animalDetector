@@ -43,6 +43,12 @@
 			<artifactId>pagehelper</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+		<!-- 这里是百度的图片识别配置 -->
+		<dependency>
+			<groupId>com.baidu.aip</groupId>
+			<artifactId>java-sdk</artifactId>
+			<version>3.2.0</version>
+		</dependency>
 
 	</dependencies>
 	<build>

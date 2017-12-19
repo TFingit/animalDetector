@@ -1,4 +1,4 @@
-package animalDetector;
+package animalDetector.web.controller;
 
 import java.util.HashMap;
 import java.util.Map;
