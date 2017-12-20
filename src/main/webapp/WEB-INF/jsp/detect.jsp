@@ -6,17 +6,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>动物识别DEMO</title>
 <!-- easyui的样式主题文件 -->
-<link rel="stylesheet" type="text/css" href="/resources/js/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../../resources/js/easyui/themes/default/easyui.css">
 <!-- easyui的系统图标-->   
-<link rel="stylesheet" type="text/css" href="/resources/js/easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../../resources/js/easyui/themes/icon.css">
 <!-- 引入颜色的样式 -->
-<link rel="stylesheet" type="text/css" href="/resources/js/easyui/themes/color.css">
+<link rel="stylesheet" type="text/css" href="../../resources/js/easyui/themes/color.css">
 <!-- easyui依赖的jquery库-->   
-<script type="text/javascript" src="/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../resources/js/jquery.min.js"></script>
 <!-- easyui的插件库-->      
-<script type="text/javascript" src="/resources/js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../../resources/js/easyui/jquery.easyui.min.js"></script>
 <!-- easyui的汉化包 -->
-<script type="text/javascript" src="/resources/js/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="../../resources/js/easyui/locale/easyui-lang-zh_CN.js"></script>
 
 <script type="text/javascript">
 	
@@ -29,8 +29,9 @@ ${msg}
 			style="width: 400px; padding: 30px 70px 50px 70px">
 			<div style="margin-bottom: 20px">
 				<div>图片:</div>
-				<input class="easyui-filebox" name="animalPic"
-					data-options="prompt:'上传一张动物图片哦'" style="width: 100%">
+				<input type="file" name="animalPic" style="width: 100%">
+				<!-- <input class="easyui-filebox" name="animalPic"
+					data-options="prompt:'上传一张动物图片哦'" style="width: 100%"> -->
 			</div>
 			<div>
 				<button class="easyui-linkbutton" style="width: 100%">上传</button>
